@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>.async-hide { opacity: 0 !important} </style>
+<!-- Initialize the Data Layer First -->
+<script>
+			window.dataLayer = window.dataLayer || [];
+						</script>
+<!-- End Data Layer Initialization -->
+<!-- Page hiding snippet for Optimize -->
+<script>
+			(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+			h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+			(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+			})(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-PJ447K5':true}); // add optimize container ID here
+			</script>
+<!-- End Page hiding snippet for Optimize -->
+<!-- GA w/Optimize plugin and Enhanced Ecommerce -->
+<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-1905305-1', 'auto', {allowLinker: true}); // GA Property ID
+			ga('require', 'GTM-PJ447K5', {allowLinker: true}); // Optimize Container ID
+			ga('require', 'ec'); // enhanced ecommerce plugin
+			ga('set', 'dimension1', false); // boolean - is user logged in?
+			ga('set', 'dimension2', 'Not Logged In'); // string - user type - set in Aops::initTemplate() method
+			ga('send', 'pageview');
+			</script>
+<!-- End GA w/Optimize plugin and Enhanced Ecommerce -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-59JWRGZ');</script>
+<!-- End Google Tag Manager -->
+<script>AoPS = {
+  start_time : new Date().getTime()
+};</script>
+<script>
+  AoPS.bootstrap_data = [];
+  AoPS.bd = AoPS.bootstrap_data; // Alias!
+	AoPS.session = {"id":"f283a4db5de782e3cd326759b1542870","user_id":1,"username":"Anonymous","avatar":"","logged_in":false,"role":"unregistered_user","a":false,"n":false,"show_privacy":null,"cmty_collection":""};
+	AoPS.bd.assetVersion = 2789;
+  AoPS.bd.environment = 'production';
+	AoPS.protected_url = 'https://artofproblemsolving.com/';	
+	AoPS.aops_url = 'https://artofproblemsolving.com/';
+	AoPS.academy_url = 'https://aopsacademy.org/';
+</script>
+<script>
+	AoPS.sentry = {};
+ 	AoPS.sentry.assetVersion = 2789;
+ 	AoPS.sentry.aopsEnvironment = 'production';
+	AoPS.sentry.acadEnvironment = '';
+	AoPS.repo = 'aops';
+ </script>
+<script src="/assets/dist/v1417/aops_errors.js"></script>
+<link href="/apple-touch-icon.png" rel="apple-touch-icon"/>
+<script>
+					(function(h,o,t,j,a,r){
+					h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+					h._hjSettings={hjid:774800,hjsv:6};
+					a=o.getElementsByTagName('head')[0];
+					r=o.createElement('script');r.async=1;
+					r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+					a.appendChild(r);
+					})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+				</script>
+<script>
+					!function(f,b,e,v,n,t,s)
+					{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+					n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+					if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+					n.queue=[];t=b.createElement(e);t.async=!0;
+					t.src=v;s=b.getElementsByTagName(e)[0];
+					s.parentNode.insertBefore(t,s)}(window,document,'script',
+						'https://connect.facebook.net/en_US/fbevents.js');
+					fbq('init', '136949896895236');
+					fbq('track', 'PageView');
+				</script>
+<noscript>
+<img height="1" src="https://www.facebook.com/tr?id=136949896895236&amp;ev=PageView&amp;noscript=1" width="1"/>
+</noscript>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="initial-scale=1" name="viewport"/>
+<meta content="origin" name="referrer"/>
+<link href="//assets.artofproblemsolving.com/images/apple-touch-icon.png" rel="apple-touch-icon"/>
+<title>Art of Problem Solving</title>
+<link href="/assets/fonts/font-awesome/css/all.css" rel="stylesheet"/>
+<link href="/assets/dist/v1417/css/main-head.css" rel="stylesheet"/>
+<link href="/assets/dist/v1417/css/sharedsite.css" rel="stylesheet"/>
+<link href="/assets/dist/v1417/css/navheader.css" rel="stylesheet"/>
+<link href="/assets/dist/v1417/css/footer.css" rel="stylesheet"/>
+<link href="/online-favicon.ico?v=2" rel="icon"/>
+<link href="https://artofproblemsolving.com/assets/dist/v1417/css/top_slider.css?__v__=2789" rel="stylesheet"/>
+<link href="https://artofproblemsolving.com/assets/dist/v1417/css/callouts.css?__v__=2789" rel="stylesheet"/>
+<link href="https://artofproblemsolving.com/m/online/dist/v1417/css/online_sections.css?__v__=2789" rel="stylesheet"/>
+<script crossorigin="anonymous" src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.fill%2CArray.prototype.find%2CArray.prototype.findIndex%2CArray.prototype.includes%2CString.prototype.endsWith%2CString.prototype.includes%2CString.prototype.startsWith%2CString.prototype.repeat"></script>
+<script>
+  if (!window.console) console = {log: function() {}, dir: function() {}};
+  $$ = function( selector ) { return document.getElementById( selector ); }
+</script>
+<script src="//assets.artofproblemsolving.com/js/jquery.min.js"></script>
+</head>
+<body class="production">
+<noscript>
+<iframe height="0" src="https://www.googletagmanager.com/ns.html?id=GTM-59JWRGZ" style="display:none;visibility:hidden" width="0"></iframe>
+</noscript>
+<div class="aops-html-modal" id="epicfail" style="display: none">
+<div class="aops-html-modal-inner">
+<div class="aops-html-modal-main">
+<p>Something appears to not have loaded correctly.</p>
+</div>
+<div class="aops-html-modal-bottom">
+<p><a onclick="location.reload(true);return false">Click to refresh</a>.</p>
+</div>
+</div>
+</div>
+<script src="/assets/js/epic_fail.js"></script>
+<div id="page-wrapper">
+<!-- search:off -->
+<div class="no-select" id="header-wrapper">
+<div class="header-underlay">
+<div id="header">
+<!-- The gray bar at top -->
+<!-- see shared-site.css -->
+<div class="sharedsite-wrapper" id="top-bar">
+<div class="sharedsitebar">
+<a class="mobile-title" href="/"></a>
+<div class="sharedsite-links">
+<a class="site-link main" href="/company">
+																		Art of Problem Solving
+									</a>
+<div class="site">
+<a class="site-link selected" href="/">
+<img class="site-icon" src="/assets/images/logos/icon-online.svg"/>
+<span class="site-name">AoPS Online</span>
+</a>
+<!-- Rich dropdown -->
+<div class="site-dropdown-wrapper">
+<div class="site-dropdown">
+<div class="site-info">
+<div class="site-logo">
+<img src="/assets/images/logos/aops-online.svg"/>
+</div>
+<div class="site-snippet">
+														Math texts, online classes, and more
+														<br/>for students in grades 5-12.
+													</div>
+<a class="site-visit aops-primary" href="/" target="_blank">
+														Visit AoPS Online <span class="aops-font">‚</span>
+</a>
+</div>
+<div class="site-quick-nav">
+<a class="btn btn-primary aops-btn" href="/store" target="_blank">
+														Books for Grades 5-12
+													</a>
+<a class="btn btn-primary aops-btn" href="/school" target="_blank">
+														Online Courses
+													</a>
+</div>
+</div>
+</div>
+<!-- End rich dropdown -->
+</div>
+<div class="site">
+<a class="site-link" href="https://beastacademy.com">
+<img class="site-icon" src="/assets/images/logos/icon-ba.svg"/>
+<span class="site-name">Beast Academy</span>
+</a>
+<div class="site-dropdown-wrapper">
+<div class="site-dropdown">
+<div class="site-info">
+<div class="site-logo">
+<img src="/assets/images/logos/aops-ba.svg"/>
+</div>
+<div class="site-snippet">
+														Engaging math books and online learning
+														<br/>for students ages 8-13.
+													</div>
+<a class="site-visit ba-primary" href="https://beastacademy.com" target="_blank">
+														Visit Beast Academy <span class="aops-font">‚</span>
+</a>
+</div>
+<div class="site-quick-nav">
+<a class="btn btn-primary ba-btn" href="https://beastacademy.com/books" target="_blank">
+														Books for Ages 8-13
+													</a>
+<a class="btn btn-primary ba-btn" href="https://beastacademy.com/online" target="_blank">
+														Beast Academy Online
+													</a>
+</div>
+</div>
+</div>
+</div>
+<div class="site">
+<a class="site-link" href="//aopsacademy.org">
+<img class="site-icon" src="/assets/images/logos/icon-academy.svg"/>
+<span class="site-name">AoPS Academy</span>
+</a>
+<div class="site-dropdown-wrapper">
+<div class="site-dropdown">
+<div class="site-info">
+<div class="site-logo">
+<img src="/assets/images/logos/aops-academy.svg"/>
+</div>
+<div class="site-snippet">
+														Nationwide learning centers
+														<br/>for students in grades 2-12.
+													</div>
+<a class="site-visit academy-primary" href="//aopsacademy.org" target="_blank">
+														Visit AoPS Academy <span class="aops-font">‚</span>
+</a>
+</div>
+<div class="site-quick-nav">
+<a class="btn btn-primary academy-btn" href="//aopsacademy.org/campuses" target="_blank">
+														Find a Campus
+													</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- The white area where main menu options appear -->
+<!-- The menu links -->
+<div id="main-menubar">
+<div class="menubar-content">
+<div class="menubar-logo online">
+<img class="menubar-hamburger" src="/assets/images/hamburger.svg"/>
+<a class="logo-img-link" href="/online">
+<img class="logo-img" src="/assets/images/logos/aops-online.svg"/>
+<img class="logo-img-mobile" src="/assets/images/logos/aops-online-mobile.svg"/>
+<img class="logo-img-small" src="/assets/images/logos/aops-online-mobile.svg"/>
+</a>
+</div>
+<div class="menubar-links-outer">
+<!-- The login links -->
+<div class="menu-login-wrapper online">
+<div class="menu-login-item">
+<div class="login-button online-login-button no-select not-signed-in" id="header-login">
+														Sign In/<br class="sign-in-break"/>Register
+													</div>
+</div>
+</div>
+<div class="menubar-labels online">
+<div class="menubar-label school">
+<div class="menubar-label-link-outer">
+<a class="menubar-label-link" href="/school">
+                            online school
+                          </a>
+</div>
+<div class="menubar-dropdown">
+<div class="triangle"></div>
+<div class="dropdown-content">
+<!-- These have IDs for A/B testing purposes. T27691 -->
+<a href="/school/how-school-works" id="online-school-menu-how-school-works"> How Classes Work </a>
+<a href="/school/catalog" id="online-school-menu-catalog"> Course Catalog </a>
+<a href="/school/schedule" id="online-school-menu-schedule"> Class Schedule </a>
+<a href="/school/recommendations" id="online-school-menu-recommmendations"> Recommendations </a>
+<a href="/school/woot?gtmlist=School_Nav" id="online-school-menu-woot-courses"> WOOT Courses </a>
+<a href="/school/handbook/prospective" id="online-school-menu-handbook">
+                              School Handbook </a>
+<a href="/school/mathjams" id="online-school-menu-mathjams"> Math Jams </a>
+</div>
+</div>
+</div>
+<div class="menubar-label store">
+<div class="menubar-label-link-outer">
+<a class="menubar-label-link" href="/store">
+                            books<span class="menubar-link-ext">tore </span>
+</a>
+</div>
+<div class="menubar-dropdown">
+<div class="triangle"></div>
+<div class="dropdown-content">
+<a href="/store/list/aops-curriculum">AoPS Curriculum</a>
+<a href="/store/list/beast-academy">Beast Academy</a>
+<a href="/store/online">Online Books</a>
+<a href="/store/recommendations">Recommendations</a>
+<a href="/store/list/other-products">Other Books &amp; Gear</a>
+<a href="/store/list/all-products">All Products</a>
+<a href="/store/gift-certificates?gtmlist=Bookstore_Nav">Gift Certificates</a>
+</div>
+</div>
+</div>
+<div class="menubar-label community">
+<div class="menubar-label-link-outer">
+<a class="menubar-label-link" href="/community">
+                            community
+                          </a>
+</div>
+<div class="menubar-dropdown">
+<div class="triangle"></div>
+<div class="dropdown-content">
+<a data-cmty="" href="/community">Forums</a>
+<a data-cmty="" href="/community/c13_contests">Contests</a>
+<a data-cmty="" href="/community/search">Search</a>
+<a data-cmty="" href="/community/faq">Help</a>
+</div>
+</div>
+</div>
+<div class="menubar-label resources">
+<div class="menubar-label-link-outer">
+<a class="menubar-label-link" href="/resources">
+                            resources
+                          </a>
+</div>
+<div class="menubar-dropdown">
+<div class="triangle"></div>
+<div class="dropdown-content">
+<div class="dropdown-columns">
+<div class="dropdown-category">
+<span class="dropdown-category-label">math training &amp; tools</span>
+<a href="/alcumus">Alcumus</a>
+<a href="/videos">Videos</a>
+<a href="/ftw">For the Win!</a>
+<a href="/mathcounts_trainer">MATHCOUNTS Trainer</a>
+<a href="/texer">LaTeX TeXeR</a>
+<a href="/polymath">MIT PRIMES/CrowdMath</a>
+<a href="/keeplearning">Keep Learning</a>
+<a href="/contests/mathcounts">MATHCOUNTS Week</a>
+<a href="/contests/amc">AMC on AoPS</a>
+</div>
+<div class="dropdown-column">
+<div class="dropdown-category category-in-column">
+<span class="dropdown-category-label">news &amp; information</span>
+<a href="/news">AoPS News</a>
+<a href="/wiki/index.php?title=Main_Page">AoPS Wiki</a>
+</div>
+<div class="dropdown-category category-in-column">
+<span class="dropdown-category-label">just for fun</span>
+<a href="/reaper">Reaper</a>
+<a href="/greedcontrol">Greed Control</a>
+</div>
+</div>
+</div>
+<div class="dropdown-view-more-link-container">
+<a class="dropdown-view-more-link" href="/resources">view all <span class="aops-icon">0</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="menubar-label menu-login-item">
+<div class="login-button online-login-button no-select" id="header-login">
+                            Sign In/Register
+                          </div>
+</div>
+<div class="menubar-label search">
+<div id="search-widget">
+<img id="search-icon" src="/assets/images/top/icon-search.svg"/>
+</div>
+<div class="menubar-dropdown">
+<div class="triangle"></div>
+<div class="dropdown-content">
+<div class="search-input-wrapper">
+<input data-hj-masked="" data-hj-suppress="" id="search-input" placeholder="Search AoPS" type="text"/>
+<div id="search-clicker">
+<svg enable-background="new 0 0 289 289" viewbox="0 0 289 289" x="0px" y="0px">
+<g>
+<path d="M121.5,220.5c-2.6,0-5.1-1-7.1-2.9c-3.9-3.9-3.9-10.2,0-14.1l58.9-58.9l-58.9-58.9c-3.9-3.9-3.9-10.2,0-14.1c3.9-3.9,10.2-3.9,14.1,0l66,66c3.9,3.9,3.9,10.2,0,14.1l-66,66C126.6,219.5,124.1,220.5,121.5,220.5z" fill="##1b365d"></path>
+</g>
+</svg>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<noscript>
+<div class="infobar">JavaScript is not enabled. JavaScript is required to fully utilize the site.</div>
+</noscript>
+</div>
+<!-- search icon script lives in footer.phtml-->
+<!-- /search:off -->
+<div class="main-top online">
+<!-- Remove class variant1 to re-enable hero images (See: T35260) -->
+<div class="slider-outer auto-scroll variant1" id="online-slider">
+<div class="slide-arrow left">
+<img src="/assets/images/arrow.svg"/>
+</div>
+<div class="slides-holder">
+<div id="slider-original">
+<div class="slide">
+<div class="slide-text">
+<div class="slide-text-inner">
+<div class="slide-title">
+					Training Today's Brightest Minds to Solve Tomorrow's Problems
+				</div>
+<div class="slide-subtitle">
+					AoPS Online offers educational resources for
+					motivated students in grades <nobr>5–12</nobr>. <span class="hide-at-small">With our books, classes
+						and other online resources, students develop the skills they need to become successful, creative problem
+						solvers.</span>
+</div>
+<div class="slide-button">
+					learn more
+				</div>
+</div>
+</div>
+<div class="slide-graphic">
+<img class="slide-jazz slide1-1" src="assets/images/top/slide-jazz-5.svg"/>
+<img class="slide-jazz slide1-2" src="assets/images/top/slide-jazz-6.svg"/>
+<img class="slide-jazz slide1-3" src="assets/images/top/slide-jazz-4.svg"/>
+<img class="slide-jazz slide1-4" src="assets/images/top/slide-jazz-10.svg"/>
+<img class="slide-img shift-at-small" src="m/online/images/slide-online.png"/>
+</div>
+</div>
+<div class="slide">
+<div class="slide-text">
+<div class="slide-text-inner">
+<div class="slide-title">
+					Advanced Math at Your Fingertips
+				</div>
+<div class="slide-subtitle">
+					Textbooks for grades <nobr>2–12</nobr> go far beyond the basics, challenging students to solve unique
+					and interesting problems. Books are suitable as stand-alone curriculum or as supplemental math enrichment.
+				</div>
+<a class="slide-button" href="/store">
+					learn more
+				</a>
+</div>
+</div>
+<div class="slide-graphic">
+<img class="slide-jazz slide2-1" src="assets/images/top/slide-jazz-9.svg"/>
+<img class="slide-jazz slide2-2" src="assets/images/top/slide-jazz-1.svg"/>
+<img class="slide-jazz slide2-3" src="assets/images/top/slide-jazz-8.svg"/>
+<img class="slide-jazz slide2-4" src="assets/images/top/slide-jazz-5.svg"/>
+<img class="slide-img" src="m/online/images/slide-online-1.png"/>
+</div>
+</div>
+<div class="slide">
+<div class="slide-text">
+<div class="slide-text-inner">
+<div class="slide-title">
+					Learn From the Best in a Community of Motivated Peers
+				</div>
+<div class="slide-subtitle">
+					Online courses taught by some of the world’s most accomplished math teachers. Our alumni include winners of
+					every major math competition, from MATHCOUNTS to the USA Math Olympiad and beyond.
+				</div>
+<a class="slide-button" href="/school/catalog">
+					view courses
+				</a>
+</div>
+</div>
+<div class="slide-graphic">
+<img class="slide-jazz slide3-1" src="assets/images/top/slide-jazz-10.svg"/>
+<img class="slide-jazz slide3-2" src="assets/images/top/slide-jazz-3.svg"/>
+<img class="slide-jazz slide3-3" src="assets/images/top/slide-jazz-2.svg"/>
+<img class="slide-jazz slide3-4" src="assets/images/top/slide-jazz-7.svg"/>
+<img class="slide-img" src="m/online/images/slide-online-2.png"/>
+</div>
+</div>
+</div>
+<div id="slider-variant1">
+<div class="slide variant1-slide">
+<div class="slide-text variant1-slide-text">
+<div class="slide-text-inner">
+<div class="slide-title">
+					Training Today's Brightest Minds to Solve Tomorrow's Problems
+				</div>
+<div class="subtitle-button-container">
+<div class="slide-subtitle">
+						AoPS Online offers educational resources for
+						motivated students in grades <nobr>5–12</nobr>. <span class="hide-at-small">With our books, classes and other online resources, students develop the skills they need to become successful, creative problem solvers.</span>
+</div>
+<div class="slide-button">
+						learn more
+					</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide variant1-slide">
+<div class="slide-text variant1-slide-text">
+<div class="slide-text-inner">
+<div class="slide-title">
+			Advanced Math at Your Fingertips
+				</div>
+<div class="subtitle-button-container">
+<div class="slide-subtitle">
+						Textbooks for grades <nobr>2–12</nobr> go far beyond the basics, challenging students to solve unique and interesting problems. Books are suitable as stand-alone curriculum or as supplemental math enrichment.
+					</div>
+<a class="slide-button" href="/store">
+						learn more
+					</a>
+</div>
+</div>
+</div>
+</div>
+<div class="slide variant1-slide">
+<div class="slide-text variant1-slide-text">
+<div class="slide-text-inner">
+<div class="slide-title">
+					Learn From the Best in a Community of Motivated Peers
+				</div>
+<div class="subtitle-button-container">
+<div class="slide-subtitle">
+						Online courses taught by some of the world’s most accomplished math teachers. Our alumni include winners of every major math competition, from MATHCOUNTS to the USA Math Olympiad and beyond.
+					</div>
+<a class="slide-button" href="/school/catalog">
+						view courses
+					</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slide-arrow right">
+<img src="/assets/images/arrow.svg"/>
+</div>
+<div class="slide-controller">
+<!-- Buttons added through js below -->
+</div>
+</div>
+<div class="callouts-container program">
+<a class="callout" href="/school">
+<div class="callout-text">
+<div class="callout-program-title" id="online-school-callout-box">
+      online school
+      <span class="circle-arrow"></span>
+</div>
+<div class="testSubtitleLine" style="display:inline-block;font-size:16px;">Grades 5-12</div>
+<div class="callout-program-subtitle">
+      Learn from expert instructors in an interactive, online classroom setting, with both group and individual attention. </div>
+<div class="callout-program-subtitle short">
+      Interactive online math classes. </div>
+</div>
+<div class="callout-bottom">
+<div class="callout-button">learn now</div>
+<div class="callout-img-outer">
+<img class="callout-graphic" src="/m/online/images/callout-onlineschool.png"/>
+</div>
+</div>
+</a>
+<a class="callout" href="/store">
+<div class="callout-text">
+<div class="callout-program-title">
+      bookstore
+      <span class="circle-arrow"></span>
+</div>
+<div class="testSubtitleLine" style="display:inline-block;font-size:16px;">Grades 2-12</div>
+<div class="callout-program-subtitle">
+      Order textbooks to develop problem-solving strategies needed for success in top math contests, elite universities and competitive careers.
+    </div>
+<div class="callout-program-subtitle short">
+      Comprehensive math textbooks. </div>
+</div>
+<div class="callout-bottom">
+<div class="callout-button">shop now</div>
+<div class="callout-img-outer">
+<img class="callout-graphic" src="/m/online/images/callout-bookstore.png"/>
+</div>
+</div>
+</a>
+<a class="callout" href="/community">
+<div class="callout-text">
+<div class="callout-program-title">
+      community
+      <span class="circle-arrow"></span>
+</div>
+<div class="testSubtitleLine" style="display:inline-block;font-size:16px;">Grades 5+</div>
+<div class="callout-program-subtitle">
+    Explore, learn, and collaborate with our community of over 500,000 problem solvers.
+    </div>
+<div class="callout-program-subtitle short">
+      Connect with other math lovers. </div>
+</div>
+<div class="callout-bottom">
+<div class="callout-button">join the conversation</div>
+<div class="callout-img-outer">
+<img class="callout-graphic" src="/m/online/images/callout-community.png"/>
+</div>
+</div>
+</a>
+</div>
+<link href="https://artofproblemsolving.com//assets/dist/v1417/css/intro_video.css" rel="stylesheet"/>
+<div class="intro-video-outer">
+<div class="intro-video-wrapper">
+<!-- Pick video depending on page -->
+<div class="video-area">
+<iframe allow="autoplay; encrypted-media" allowfullscreen="" class="video" frameborder="0" src="https://www.youtube.com/embed/ycQdn7xC8og?rel=0&amp;hd=1"></iframe>
+</div>
+<div class="video-description">
+<div class="video-description-title">
+    More Than Just Another Online Class
+  </div>
+<div class="video-description-content">
+   The AoPS curriculum stretches students to their full potential, while our online school connects eager students with inspiring peers and accomplished instructors. We give many of these students their first taste of a world beyond traditional math.
+A world filled with challenging, intriguing problems that require creativity and persistence to solve.
+ A world where they have access to impressive mentors and role models.
+ And most importantly, a world filled with inspiring peers who share their love of learning—peers that they often first met in AoPS classes and the AoPS online community.
+
+  </div>
+</div>
+</div>
+</div>
+<div class="online-section-outer class-categories">
+<div class="online-section-inner class-categories">
+<div class="online-section-title">
+					Class Categories
+				</div>
+<div class="class-category-categories">
+<a class="class-category" href="/school/catalog#introductory">
+<img class="class-category-img" src="/m/online/images/class-intro.png"/>
+<div class="class-category-title">
+    Introductory<br/>Math
+  </div>
+<div class="class-category-subtitle">
+    Prealgebra to Geometry
+  </div>
+<div class="class-category-grade">
+    Grades <nobr>5–10+</nobr>
+</div>
+<div class="section-view-button">
+    view
+    <span class="circle-arrow online-blue"></span>
+</div>
+</a>
+<a class="class-category" href="/school/catalog#intermediate">
+<img class="class-category-img" src="/m/online/images/class-intermediate.png"/>
+<div class="class-category-title">
+    Intermediate<br/>Math
+  </div>
+<div class="class-category-subtitle">
+    Intermediate Algebra to Precalculus
+  </div>
+<div class="class-category-grade">
+    Grades <nobr>8–12+</nobr>
+</div>
+<div class="section-view-button">
+    view
+    <div class="circle-arrow online-blue"></div>
+</div>
+</a>
+<a class="class-category" href="/school/catalog#advanced">
+<img class="class-category-img" src="/m/online/images/class-advanced.png"/>
+<div class="class-category-title">
+    Advanced<br/>Math
+  </div>
+<div class="class-category-subtitle">
+    Calculus to Olympiad Geometry
+  </div>
+<div class="class-category-grade">
+    Grades  <nobr>9–12+</nobr>
+</div>
+<div class="section-view-button">
+    view
+    <div class="circle-arrow online-blue"></div>
+</div>
+</a>
+<a class="class-category" href="/school/catalog#contest">
+<img class="class-category-img" src="/m/online/images/class-competition.png"/>
+<div class="class-category-title">
+    Contest<br/>Math
+  </div>
+<div class="class-category-subtitle">
+    Preparation for Math Competitions
+  </div>
+<div class="class-category-grade">
+    Grades <nobr>6–12</nobr>
+</div>
+<div class="section-view-button">
+    view
+    <div class="circle-arrow online-blue"></div>
+</div>
+</a>
+<a class="class-category" href="/school/catalog#woot">
+<img class="class-category-img" src="/m/online/images/class-woot.png"/>
+<div class="class-category-title">
+    WOOT<br/>Programs
+  </div>
+<div class="class-category-subtitle">
+    Worldwide Online Olympiad Training
+  </div>
+<div class="class-category-grade">
+    Grades <nobr>9–12</nobr>
+</div>
+<div class="section-view-button">
+    view
+    <div class="circle-arrow online-blue"></div>
+</div>
+</a>
+<a class="class-category" href="/school/catalog#programming">
+<img class="class-category-img" src="/m/online/images/class-computerscience.png"/>
+<div class="class-category-title">
+   Computer<br/>Science
+  </div>
+<div class="class-category-subtitle">
+    Programming<br/>Classes
+  </div>
+<div class="class-category-grade">
+    Grades <nobr>6–12+</nobr>
+</div>
+<div class="section-view-button">
+    view
+    <div class="circle-arrow online-blue"></div>
+</div>
+</a>
+</div>
+<a class="online-section-button" href="/school/catalog">
+					view full course list
+				</a>
+</div>
+</div>
+<div class="online-section-outer our-books">
+<div class="online-section-inner our-books">
+<div class="online-section-title">
+					Our Books
+				</div>
+<div class="book-sets">
+<div class="book-set">
+<img class="book-set-img" src="/m/online/images/books-intro.png"/>
+<img class="book-set-img-mobile" src="/m/online/images/books-intro-mobile.png"/>
+<div class="book-set-content">
+<div class="book-set-text">
+<div class="book-set-title">
+        Introductory Series
+      </div>
+<div class="book-set-description">
+        Complete curriculum covering Prealgebra through Geometry in depth.
+        Suitable for grades <nobr>5–10.</nobr>
+</div>
+</div>
+<a class="section-view-button" href="/store/list/aops-curriculum#intro">
+      view books
+      <span class="circle-arrow online-blue"></span>
+</a>
+</div>
+</div>
+<div class="book-set">
+<img class="book-set-img" src="/m/online/images/books-intermediate.png"/>
+<img class="book-set-img-mobile" src="/m/online/images/books-intermediate-mobile.png"/>
+<div class="book-set-content">
+<div class="book-set-text">
+<div class="book-set-title">
+        Intermediate &amp; Advanced
+      </div>
+<div class="book-set-description">
+        Challenging textbooks that prepare students for advanced mathematical subjects in high school, college, and beyond. <br/>
+        Suitable for grades <nobr>8–12.</nobr>
+</div>
+</div>
+<a class="section-view-button" href="/store/list/aops-curriculum#intermediate">
+      view books
+      <span class="circle-arrow online-blue"></span>
+</a>
+</div>
+</div>
+<div class="book-set">
+<img class="book-set-img" src="/m/online/images/books-contest.png"/>
+<img class="book-set-img-mobile" src="/m/online/images/books-contest-mobile.png"/>
+<div class="book-set-content">
+<div class="book-set-text">
+<div class="book-set-title">
+        Contest Preparation
+      </div>
+<div class="book-set-description">
+        Problem-solving guides that math competition winners have relied on for more than 25 years, written by people who have won medals in national math contests, including MATHCOUNTS, the AMC, the AIME, and the USAMO. <br/>
+        Suitable for grades <nobr>6–12.</nobr>
+</div>
+</div>
+<a class="section-view-button" href="/store/list/aops-curriculum#problem-solving">
+      view books
+      <span class="circle-arrow online-blue"></span>
+</a>
+</div>
+</div>
+</div>
+<a class="online-section-button" href="/store/list/all-products">
+					view all books
+				</a>
+</div>
+</div>
+<div class="online-section-outer online-resources">
+<div class="online-section-inner online-resources">
+<div class="online-section-title">
+					Resources
+				</div>
+<div class="resources-outer">
+<div class="resource-item">
+<img class="resource-icon" src="/m/online/images/alcumus.svg"/>
+<div class="resource-text">
+<div class="resource-name">
+      Alcumus
+    </div>
+<div class="resource-description">
+      Alcumus is our free adaptive online learning system.
+      It offers students a customized learning experience, adjusting to student
+      performance to deliver appropriate problems and lessons.
+      Alcumus is aligned to our Introductory online courses
+      and to our Introduction
+      series of textbooks.
+    </div>
+<a class="section-view-button" href="/alcumus">
+      start learning
+      <div class="circle-arrow online-navy"></div>
+</a>
+</div>
+</div>
+<div class="resource-item">
+<img class="resource-icon" src="/m/online/images/videos.svg"/>
+<div class="resource-text">
+<div class="resource-name">
+      Videos
+    </div>
+<div class="resource-description">
+      Our video library offers hundreds of videos featuring AoPS
+      founder Richard Rusczyk.  Many of the videos are aligned
+      to our Prealgebra, Introduction to Algebra, and Introduction to
+      Counting &amp; Probability books and classes.
+    </div>
+<a class="section-view-button" href="/videos">
+      watch now
+      <div class="circle-arrow online-navy"></div>
+</a>
+</div>
+</div>
+<div class="resource-item">
+<img class="resource-icon" src="/m/online/images/mctrainer.svg"/>
+<div class="resource-text">
+<div class="resource-name">
+      MATHCOUNTS Trainer
+    </div>
+<div class="resource-description">
+      The MATHCOUNTS Trainer has thousands of problems from
+            previous School, Chapter, State, and National MATHCOUNTS
+            competitions.  Full solutions are provided for every
+            problem so aspiring MATHCOUNTS mathletes can learn how
+            to approach even the toughest questions.
+    </div>
+<a class="section-view-button" href="/mathcounts_trainer">
+      start training
+      <div class="circle-arrow online-navy"></div>
+</a>
+</div>
+</div>
+<div class="resource-item">
+<img class="resource-icon" src="/m/online/images/ftw.svg"/>
+<div class="resource-text">
+<div class="resource-name">
+      For the Win!
+    </div>
+<div class="resource-description">
+      Compete with middle school students from around the world
+            with For the Win! (FTW), inspired by the MATHCOUNTS Countdown Round.
+    </div>
+<a class="section-view-button" href="/ftw">
+      start playing
+      <div class="circle-arrow online-navy"></div>
+</a>
+</div>
+</div>
+</div>
+<a class="online-section-button" href="/resources">
+					view all resources
+				</a>
+</div>
+</div>
+<div class="online-section-outer community">
+<div class="online-section-inner community">
+<div class="online-section-title">
+						Community Forums
+					</div>
+<div class="topic-hexagons">
+<a class="topic-hexagon-outer" href="/community/c3">
+<div class="topic-hexagon category-id-3">
+<div class="topic-hexagon-content">
+<div class="topic-hexagon-text">Middle School Math</div>
+</div>
+</div>
+<div class="circle-arrow"></div>
+</a>
+<a class="topic-hexagon-outer" href="/community/c4">
+<div class="topic-hexagon category-id-4">
+<div class="topic-hexagon-content">
+<div class="topic-hexagon-text">High School Math</div>
+</div>
+</div>
+<div class="circle-arrow"></div>
+</a>
+<a class="topic-hexagon-outer" href="/community/c5">
+<div class="topic-hexagon category-id-5">
+<div class="topic-hexagon-content">
+<div class="topic-hexagon-text">Contests and Programs</div>
+</div>
+</div>
+<div class="circle-arrow"></div>
+</a>
+<a class="topic-hexagon-outer" href="/community/c6">
+<div class="topic-hexagon category-id-6">
+<div class="topic-hexagon-content">
+<div class="topic-hexagon-text">High School Olympiads</div>
+</div>
+</div>
+<div class="circle-arrow"></div>
+</a>
+<a class="topic-hexagon-outer" href="/community/c7">
+<div class="topic-hexagon category-id-7">
+<div class="topic-hexagon-content">
+<div class="topic-hexagon-text">College Math</div>
+</div>
+</div>
+<div class="circle-arrow"></div>
+</a>
+<a class="topic-hexagon-outer" href="/community/c10">
+<div class="topic-hexagon category-id-10">
+<div class="topic-hexagon-content">
+<div class="topic-hexagon-text">Site Support</div>
+</div>
+</div>
+<div class="circle-arrow"></div>
+</a>
+</div>
+<a class="online-section-button" href="/community">
+						Visit community
+					</a>
+</div>
+</div>
+<link href="https://artofproblemsolving.com//assets/dist/v1417/css/quotes_slider.css" rel="stylesheet"/>
+<div class="slider-quotes-space">
+<div class="slider-quotes-outer">
+<div class="slider-quote-arrow left">
+<svg class="arrow-svg" height="330" version="1.1" viewbox="0 0 125 330" width="125" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+<path d="M12.1,328.4c-2.1,0-4.2-0.6-6.1-1.8C1,323.2-0.4,316.4,3,311.3L99.7,165L3,18.7C-0.4,13.6,1,6.8,6.1,3.4c5.1-3.3,11.9-2,15.2,3.1L122,158.9c2.4,3.7,2.4,8.5,0,12.1L21.3,323.5C19.2,326.7,15.7,328.4,12.1,328.4z" fill="#c5e86c"></path>
+</svg>
+</div>
+<!-- Pick quotes depending on page -->
+<div class="slider-quote">
+<div class="quote-content">
+   Our experience over the last five months with <span class="highlight-text">AoPS's Prealgebra course has been transformational!</span>  Our kids used to dread math—but now they're discussing math together while we’re hiking, having dinner, or visiting with family.  Wow! 
+  </div>
+<div class="quote-source">
+    Jean R.
+  </div>
+<div class="quote-source-info">
+    Boing Boing
+  </div>
+</div>
+<div class="slider-quote">
+<div class="quote-content">
+    AoPS courses are <span class="highlight-text">a wonderful balance of challenge and guidance,</span> constantly stretching students and inviting them to wrestle with problems at their own pace until they reach epiphanies. Bravo! I wish AoPS had been around when I was in high school.
+  </div>
+<div class="quote-source">
+     AoPS Online Parent
+  </div>
+<div class="quote-source-info">
+</div>
+</div>
+<div class="slider-quote">
+<div class="quote-content">
+My son is eating your classes up.  He is pumped for each Wednesday and has to <span class="highlight-text">really work to solve the problems.</span>  He's always loved math, but cannot get enough of it now.  Way to provide the best educational product this Dad has found anywhere!
+  </div>
+<div class="quote-source">
+    John C.
+  </div>
+<div class="quote-source-info">
+</div>
+</div>
+<div class="slider-quote">
+<div class="quote-content">
+    I'm impressed at how much <span class="highlight-text">my son loved Precalculus.</span> Sometimes he spent two days on his written proofs! I love that students weren't treated with kid gloves but instead <span class="highlight-text">afforded respect as burgeoning mathematicians.</span>  Now he's looking forward to Calculus.
+   My daughter was already very good at math before she took Prealgebra through AoPS. Since then, she's become an even <span class="highlight-text">stronger and more confident problem solver</span> while progressing through the curriculum. 
+  </div>
+<div class="quote-source">
+      Russell 
+  </div>
+<div class="quote-source-info">
+</div>
+</div>
+<div class="slider-quote">
+<div class="quote-content">
+    We were incredibly lucky to have three passionate instructors in ChemWOOT who were able to capture the beauty and diversity of chemistry. This class was like a <span class="highlight-text">reaction chamber of some of the most motivated chemistry students in the country.</span> The experience was really powerful. 
+  </div>
+<div class="quote-source">
+      AoPS Online Student 
+  </div>
+<div class="quote-source-info">
+</div>
+</div>
+<div class="slider-quote">
+<div class="quote-content">
+    I've definitely <span class="highlight-text">developed a lot more confidence in math</span> since taking AoPS Introduction to Geometry. In the process of doing harder problems than I ever knew I could, I've also begun to see geometry as an art. I'm enjoying math more and more!
+  </div>
+<div class="quote-source">
+      AoPS Online Student 
+  </div>
+<div class="quote-source-info">
+</div>
+</div>
+<div class="slider-quote">
+<div class="quote-content">
+    Great course! I'm a senior in high school and I decided to take Intermediate Counting &amp; Probability because <span class="highlight-text">I'd never been exposed to problem-solving math before, let alone discrete math.</span> Now, I feel ready to take the 400-level combinatorics sequence at college in a few months, and my problem-solving skills have improved a lot. 
+  </div>
+<div class="quote-source">
+      AoPS Online Student 
+  </div>
+<div class="quote-source-info">
+</div>
+</div>
+<div class="slider-quote">
+<div class="quote-content">
+    Where I live, calculus is not offered in high school, so I've really <span class="highlight-text">treasured my AoPS Calculus class</span> and everything I've learned. Thank you again for this incredible opportunity! 
+  </div>
+<div class="quote-source">
+     Jorge Castello
+  </div>
+<div class="quote-source-info">
+</div>
+</div>
+<div class="slider-quote">
+<div class="quote-content">
+    My instructor was great. I really enjoyed having a woman instructor as <span class="highlight-text">a role model and just an all-around-great mathematician!</span> She was always willing to offer advice and knew just how many hints to give to keep problems doable but still satisfying.
+  </div>
+<div class="quote-source">
+      AoPS Online Student 
+  </div>
+<div class="quote-source-info">
+</div>
+</div>
+<div class="slider-quote">
+<div class="quote-content">
+    Every class I've taken with AoPS has been fantastic. Everyone does a great job <span class="highlight-text">helping students succeed</span> while enjoying the process of learning math. I love that the students themselves are <span class="highlight-text">always open to helping each other out.</span>
+</div>
+<div class="quote-source">
+      Matthew
+  </div>
+<div class="quote-source-info">
+</div>
+</div>
+<div class="slider-quote">
+<div class="quote-content">
+    The combination of videos, textbooks, on-line problems and book problems has been fantastic for our boys. <span class="highlight-text">I love that they can do this at their own pace,</span> and how motivated they feel now they're be in charge of their own learning. 
+  </div>
+<div class="quote-source">
+      AoPS Online Parent 
+  </div>
+<div class="quote-source-info">
+</div>
+</div>
+<div class="slider-quote-arrow right">
+<svg class="arrow-svg" height="330" version="1.1" viewbox="0 0 125 330" width="125" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+<path d="M12.1,328.4c-2.1,0-4.2-0.6-6.1-1.8C1,323.2-0.4,316.4,3,311.3L99.7,165L3,18.7C-0.4,13.6,1,6.8,6.1,3.4c5.1-3.3,11.9-2,15.2,3.1L122,158.9c2.4,3.7,2.4,8.5,0,12.1L21.3,323.5C19.2,326.7,15.7,328.4,12.1,328.4z" fill="#c5e86c"></path>
+</svg>
+</div>
+</div>
+<div class="quote-controller">
+<!-- Buttons added through js below -->
+</div>
+</div>
+<script>
+	$(window).load(function () {
+		var numSlides = $(".slider-quote").length;
+
+		AoPS.ConstructCircleSlider(numSlides, {
+			slideClass: "slider-quote",
+			controllerClass: "quote-controller",
+			circleClass: "quote-circle",
+			arrowClass: "slider-quote-arrow",
+			touchClass: "slider-quote",
+		}, true);
+	});
+</script>
+<!-- Uncomment to display news
+	<link rel="stylesheet" href='https://artofproblemsolving.com//assets/dist/v1417/css/static_news.css'>
+
+
+	<div class="news-space">
+		<div class="news-outer">
+			<div class="news-section-title">
+				Latest News
+			</div>
+			<div class="news-pieces">
+									<div class="news-piece">
+						<div class="news-topic">
+							Alcumus – Precalculus Now Available						</div>
+						<div class="news-blurb">
+							<p>We’re excited to announce that Alcumus has expanded to include Precalculus! With over 1,500 new problems, students have a brand new set of advanced topics to explore.</p>
+<p>The post <a rel="nofollow" href="https://artofproblemsolving.com/news/updates/alcumus-precalculus-now-available">Alcumus &#8211; Precalculus Now Available</a> appeared first on <a rel="nofollow" href="https://artofproblemsolving.com/news">AoPS News</a>.</p>
+						</div>
+						<a class="news-link" href="https://artofproblemsolving.com/news/updates/alcumus-precalculus-now-available">
+							read more
+							<div class="circle-arrow news-green"></div>
+						</a>
+					</div>
+									<div class="news-piece">
+						<div class="news-topic">
+							Self-Paced Prealgebra 2 opens this August						</div>
+						<div class="news-blurb">
+							<p>Ever since our self-paced Prealgebra 1 course opened in June, we’ve received more than a few questions about when self-paced Prealgebra 2 would be available. After working all summer, we are excited to announce that our new self-paced Prealgebra 2 course will be open for access on August 27!</p>
+<p>The post <a rel="nofollow" href="https://artofproblemsolving.com/news/updates/self-paced-prealgebra-2-opens-this-august">Self-Paced Prealgebra 2 opens this August</a> appeared first on <a rel="nofollow" href="https://artofproblemsolving.com/news">AoPS News</a>.</p>
+						</div>
+						<a class="news-link" href="https://artofproblemsolving.com/news/updates/self-paced-prealgebra-2-opens-this-august">
+							read more
+							<div class="circle-arrow news-green"></div>
+						</a>
+					</div>
+									<div class="news-piece">
+						<div class="news-topic">
+							AoPS Update: New AoPS Online Classes, Features in Beast Academy Online, IMO and IPhO Start, and More						</div>
+						<div class="news-blurb">
+							<p>Multiple Olympiad level competitions take place this month, as well as new features for Beast Academy Online, AoPS course times, and more:</p>
+<p>The post <a rel="nofollow" href="https://artofproblemsolving.com/news/updates/aops-update-new-aops-online-classes-features-in-beast-academy-online-imo-and-ipho-start-and-more">AoPS Update: New AoPS Online Classes, Features in Beast Academy Online, IMO and IPhO Start, and More</a> appeared first on <a rel="nofollow" href="https://artofproblemsolving.com/news">AoPS News</a>.</p>
+						</div>
+						<a class="news-link" href="https://artofproblemsolving.com/news/updates/aops-update-new-aops-online-classes-features-in-beast-academy-online-imo-and-ipho-start-and-more">
+							read more
+							<div class="circle-arrow news-green"></div>
+						</a>
+					</div>
+									<div class="news-piece">
+						<div class="news-topic">
+							AoPS News Update: Self-Paced Prealgebra 2, New Beast Academy Videos, New Alcumus Material, and more						</div>
+						<div class="news-blurb">
+							<p>Learn about our upcoming self-paced Algebra 2 course, new Beast Academy Videos and more!</p>
+<p>The post <a rel="nofollow" href="https://artofproblemsolving.com/news/updates/aops-news-update-self-paced-algebra-2-new-beast-academy-videos-new-alcumus-material-and-more">AoPS News Update: Self-Paced Prealgebra 2, New Beast Academy Videos, New Alcumus Material, and more</a> appeared first on <a rel="nofollow" href="https://artofproblemsolving.com/news">AoPS News</a>.</p>
+						</div>
+						<a class="news-link" href="https://artofproblemsolving.com/news/updates/aops-news-update-self-paced-algebra-2-new-beast-academy-videos-new-alcumus-material-and-more">
+							read more
+							<div class="circle-arrow news-green"></div>
+						</a>
+					</div>
+							</div>
+			<div class="news-controller">
+							</div>
+			<a class="news-section-button news" href='https://artofproblemsolving.com/news'>
+				view all news
+			</a>
+		</div>
+	</div>
+
+<script>
+	$(window).load(function () {
+		var numSlides = $(".news-piece").length;
+
+		AoPS.ConstructCircleSlider(numSlides, {
+			slideClass: "news-piece",
+			slideClassDisabled: "news-piece",
+			controllerClass: "news-controller",
+			circleClass: "news-circle",
+			touchClass: "news-piece",
+			disableSlideAbove: 700,
+		});
+	});
+</script>
+-->
+</div>
+<script>
+$(document).ready(function () {
+		AoPS.login.display();
+	});
+
+</script>
+<!-- search:off -->
+<div class="clearfix"></div>
+<div class="no-print" id="main-footer">
+<div class="footer-container">
+<div class="footer-topRow">
+<a href="/online">
+<img class="footer-mainLogo" src="/assets/images/logos/aops-online-footer.svg"/>
+</a>
+<div class="footer-wasc">
+<span>
+							Art of Problem Solving is an
+							<br class="wasc-break"/>
+<span class="footer-accredited">ACS WASC Accredited School</span>
+</span>
+<img class="footer-wascLogo" src="/assets/images/logos/wasc.png"/>
+</div>
+</div>
+<div class="footer-links">
+<div class="footer-col">
+<div class="footer-colHeader">aops programs</div>
+<div><a class="link" href="https://artofproblemsolving.com/online">AoPS Online</a></div>
+<div><a class="link" href="https://beastacademy.com">Beast Academy</a></div>
+<div><a class="link" href="//aopsacademy.org">AoPS Academy</a></div>
+</div>
+<div class="footer-col">
+<div class="footer-colHeader">About</div>
+<div><a class="link" href="/company/about">About AoPS</a></div>
+<div><a class="link" href="/company/staff">Our Team</a></div>
+<div><a class="link" href="/company/history">Our History</a></div>
+<div><a class="link" href="/company/careers">Jobs</a></div>
+</div>
+<div class="footer-col">
+<div class="footer-colHeader" style="left:-1px;">Site Info</div>
+<div><a class="link" href="/company/tos">Terms</a></div>
+<div><a class="link" href="/company/privacy">Privacy</a></div>
+<div><a class="link" href="/contact">Contact Us</a></div>
+</div>
+<div class="footer-col social">
+<div class="footer-colHeader">follow us</div>
+<div class="footer-social">
+<a class="link" href="https://www.facebook.com/artofproblemsolving" target="_blank">
+<img class="sm-icon" src="/assets/images/socialmedia/facebook.svg"/>
+</a>
+<a class="link" href="http://twitter.com/AoPSNews" target="_blank">
+<img class="sm-icon" src="/assets/images/socialmedia/twitter.svg"/>
+</a>
+<a class="link" href="https://www.pinterest.com/artofproblemsolving/pins/" target="_blank">
+<img class="sm-icon" src="/assets/images/socialmedia/pinterest.svg"/>
+</a>
+</div>
+</div>
+<div class="footer-col subscribe">
+<div class="footer-colHeader">
+							Subscribe for news and updates
+						</div>
+<form action="/mailinglist" method="post">
+<input class="footer-email" data-hj-masked="" data-hj-suppress="" name="subscribe-email" placeholder="Enter e-mail" type="email"/>
+<input name="new-books" type="hidden" value="on"/>
+<input name="classes" type="hidden" value="on"/>
+<input name="mathjams" type="hidden" value="on"/>
+<input class="footer-submit" type="submit" value=""/>
+<div class="footer-submit-arrow">
+<svg enable-background="new 0 0 289 289" viewbox="0 0 289 289" x="0px" y="0px">
+<g>
+<path class="arrow-fill" d="M121.5,220.5c-2.6,0-5.1-1-7.1-2.9c-3.9-3.9-3.9-10.2,0-14.1l58.9-58.9l-58.9-58.9c-3.9-3.9-3.9-10.2,0-14.1c3.9-3.9,10.2-3.9,14.1,0l66,66c3.9,3.9,3.9,10.2,0,14.1l-66,66C126.6,219.5,124.1,220.5,121.5,220.5z"></path>
+</g>
+</svg>
+</div>
+</form>
+</div>
+</div>
+<div class="copyright">
+<span>© 2020 AoPS Incorporated
+				</span>
+</div>
+</div>
+</div>
+<div id="small-footer-wrapper">
+<div class="footer-container">
+<a href="/online">
+<img class="footer-mainLogo" src="/assets/images/logos/aops-online-footer.svg"/>
+</a>
+<div class="copyright">
+				© 2020 Art of Problem Solving
+				<div class="copyright-links">
+<a href="/company">About Us</a>
+					 • 
+											<a href="/contact">Contact Us</a>
+										 • 
+					<a href="/company/tos">Terms</a>
+					 • 
+					<a href="/company/privacy">Privacy</a>
+</div>
+</div>
+</div>
+</div>
+<form action="/user/register.php" id="registration-form" method="post">
+<input name="username" type="hidden" value=""/>
+<input name="password" type="hidden" value=""/>
+<input name="from-login" type="hidden" value="true"/>
+</form>
+<div id="login-form">
+<div class="error">
+			Invalid username
+		</div>
+<div class="info" style="text-align:center">
+<img src="https://artofproblemsolving.com/assets/images/logos/aops-online.svg" width="200"/>
+<span style="position:relative;color:#1A355D;font-size:30px;left:3px;top:7px;display:inline-block">Sign In</span>
+</div>
+<form>
+<div class="form-group username">
+<div>
+<label>Username:</label>
+</div>
+<div>
+<input autocapitalize="off" class="form-control" data-hj-masked="" data-hj-suppress="" id="login-username" name="username" placeholder="Enter username or email address" type="text"/>
+</div>
+</div>
+<div class="form-group password">
+<div>
+<label>Password:</label>
+</div>
+<div>
+<input autocomplete="off" class="form-control" data-hj-masked="" data-hj-suppress="" id="login-password" name="password" placeholder="Enter password" type="hidden"/>
+</div>
+</div>
+</form>
+<div class="form-group">
+<div>
+</div>
+<div class="login-buttons">
+<button class="btn btn-primary" href="#" id="login-button">Sign In</button>
+<button class="btn" href="#" id="register-button">Create Account</button>
+<div style="margin-top:5px;box-sizing: border-box;">
+<label style="display:block;float:left;padding-right:10px;white-space:nowrap;line-height:1em;font-weight:normal">
+<input id="login-stay-logged-in" name="stay-logged-in" style="vertical-align:middle;margin:0;" type="checkbox"/>
+<span style="vertical-align:middle">Stay signed in</span>
+</label>
+</div>
+</div>
+</div>
+<div id="login-form-links">
+<p>
+<a href="/user/resend-activation.php">Lost your activation email?</a>
+</p>
+<p>
+<a href="/user/reset-pw.php">Forgot your password or username?</a>
+</p>
+</div>
+</div>
+<div class="printer" id="print-footer">Copyright © 2020 Art of Problem Solving</div>
+<script src="/assets/vendor/common-combined-2.js"></script>
+<script src="/assets/dist/v1417/aops_core.js"></script>
+<script src="/assets/js/ab.js?__v__=2789"></script>
+<script src="/assets/js/online_ab.js?__v__=2789"></script>
+<script src="/assets/js/top-slider.js?__v__=2789"></script>
+<script src="https://artofproblemsolving.com/assets/dist/v1417/js/circle_slider.js?__v__=2789"></script>
+<!-- /search:off -->
+<form action="/search" id="form-site-search" method="get">
+<input id="form-site-search-field" name="q" type="hidden" value=""/>
+</form>
+<script>
+		var submitSearch = function(value) {
+			if ( value ) {
+				document.getElementById( "form-site-search-field" ).value = value;
+				document.getElementById( "form-site-search" ).submit();
+			}
+		};
+
+	var inputDom = document.getElementById("search-input");
+	if (inputDom) {
+			inputDom.addEventListener( "keyup", function (e) {
+				if ( e.keyCode === 13 ) {
+					var value = this.value.trim();
+					submitSearch(value);
+				}
+			});
+	}
+
+	var clickerDom = document.getElementById("search-clicker");
+	if (clickerDom) {
+			clickerDom.addEventListener( "click", function (e) {
+				var value = document.getElementById( "search-input" ).value.trim();
+				submitSearch(value);
+			});
+	}
+	</script>
+<!-- copied from contact page index, with edits -->
+<script id="footer-tpl-email-dialog" type="text/x-handlebars-template">
+	<div id="mail-dialog">
+		<h1>Email Art of Problem Solving</h1>
+		<p>
+			<input data-hj-suppress="" data-hj-masked="" type="text" id="email" name="email" placeholder="Your email address">
+			<input data-hj-suppress="" data-hj-masked="" type="text" id="subject" name="subject" placeholder="Subject of message">
+			<textarea data-hj-suppress="" data-hj-masked="" id="message" name="message" placeholder="Enter your message"></textarea>
+			<div style="padding:5px 30px">
+				<input type="checkbox" id="email-copy" name="email_copy">
+				<label for="email-copy" id="email-copy-label">Send a copy to my email address.</label>
+			</div>
+			<div style="padding:5px 30px 20px">
+				<input id="footer-submit-btn" type="submit" class="btn btn-primary" value="Send">
+				<input id="footer-cancel-btn" type="submit" class="btn btn-default" value="Cancel">
+			</div>
+		</p>
+		<p id="email-error"></p>
+	</div>
+</script>
+<script id="footer-tpl-email-confirm" type="text/x-handlebars-template">
+	<div id="mail-dialog-confirm">
+		<h2>Email Sent</h2>
+		<p>Thank you for your email. We will respond to it soon.</p>
+	</div>
+</script>
+<script>
+	// Try to prevent sending email multiple times
+	var last_email = '';
+
+	$( document ).ready( function() {
+		$( ".aops-contact" ).on( "click", displayFooterEmailDialog );
+
+		$( "body" ).on( "click", "#footer-submit-btn", submitFooterEmail );
+		$( "body" ).on( "click", "#footer-cancel-btn",  cancelFooterEmail );
+	} );
+
+	function displayFooterEmailDialog() {
+		AoPS.Ui.Modal.show( {
+			body : document.getElementById( "footer-tpl-email-dialog" ).innerHTML,
+			max_width : '600px',
+			max_height : '100%',
+			scrollable : true
+		} );
+	}
+
+
+	/**
+	 * Submit email
+	 *
+	 * Note: Copy does not work in non-production mode because Mailer::quick() is
+	 * used which does not do force send.
+	 */
+	function submitFooterEmail() {
+		var obj = {
+			action : "email",
+			email : $( "#email" ).val(),
+			subject : $( "#subject" ).val(),
+			message : $( "#message" ).val(),
+			copy : $( "#email-copy" ).is( ":checked" )
+		};
+
+		if ( obj.email === last_email ) {
+			return;
+		}
+		last_email = obj.email;
+
+		// If this still happens multiple times, we have
+		// something wrong with the internal ajax call.
+		AoPS.Ui.Modal.closeAllModals();
+		$.post( "/m/contact/ajax.php", obj, function( data ) {
+			if ( data.error_code ) {
+				$( "#email-error" ).html( data.error_msg ? data.error_msg : data.error_code ).show();
+			} else {
+				AoPS.Ui.Modal.show( {
+					body : document.getElementById( "footer-tpl-email-confirm" ).innerHTML,
+					max_width : '600px',
+					max_height : '100%',
+					scrollable : true
+				} );
+			}
+		}, "json" );
+	}
+	function cancelFooterEmail() {
+		AoPS.Ui.Modal.closeAllModals();
+	}
+</script>
+<!-- bing -->
+<script>(function(w,d,t,r,u){var f,n,i;w[u]=w[u]||[],f=function(){var o={ti:"5105596"};o.q=w[u],w[u]=new UET(o),w[u].push("pageLoad")},n=d.createElement(t),n.src=r,n.async=1,n.onload=n.onreadystatechange=function(){var s=this.readyState;s&&s!=="loaded"&&s!=="complete"||(f(),n.onload=n.onreadystatechange=null)},i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)})(window,document,"script","//bat.bing.com/bat.js","uetq");</script><noscript><img height="0" src="//bat.bing.com/action/0?ti=5105596&amp;Ver=2" style="display:none; visibility: hidden;" width="0"/></noscript>
+</div></body>
+</html>
